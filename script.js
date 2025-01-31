@@ -87,7 +87,7 @@ function show_strategies() {
         Object.keys(strategy_Count).forEach(strategies => {
             const strategy = document.createElement('div');
             strategy.className = 'strategy_card';
-            strategy.innerHTML = `<span>${strategies}</span><span id='strategy_card_span'> <span id="bullet">•</span> ${strategy_Count[strategies]} ${strategy_Count[strategies] > 1 ? 'Strategies' : 'Strategy'}</span>`;
+            strategy.innerHTML = `<span>${strategies}</span><span id='strategy_card_span'>• ${strategy_Count[strategies]} ${strategy_Count[strategies] > 1 ? 'Strategies' : 'Strategy'}</span>`;
             strategy_cls.appendChild(strategy);
         });
     }
