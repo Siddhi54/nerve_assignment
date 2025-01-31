@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    overflow-y: auto; 
+}
+
+.menu_cls {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    background: #eee;
+    padding: 8px;
+    border-radius: 12px;               
+    color: #8d8c8c;
+}
+
+.menu_cls div {
+    cursor: pointer;
+    padding: 7px 10px;
+    border-radius: 12px;
+    flex: 1;
+    text-align: center;
+}
+
+.menu_select {
+    background:#0941af;
+    color: white;
+}
+
+.date_dropdown{
+    width: 500px;
+    position: relative;
+    transition: all 0.3s ease-in-out; 
+    margin-top: 25px;
+}
+
+.default_date {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.default_date::after {
+    content: 'v'; 
+    font-size: 20px;
+    margin-left: 10px;
+    color:#0941af;
+    transition: transform 0.3s ease-in-out; 
+}
+
+
+.default_date.open::after {
+    transform: rotate(180deg);
+}
+
+.date_dropdown_list {
+    width: 90%;
+    background: white;   
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column; 
+    margin-left: 5%;
+}
+
+
+.date_dropdown_list.show {
+    max-height: 300px;
+}
+
+.date_dropdown_list div {
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+    transition: background 0.2s ease-in-out;
+    border: 1px solid #ccc;
+    white-space: nowrap;
+    border-radius: 12px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
+.date_dropdown_list div:hover {
+    background: #a5b0c5;
+    color: white;
+}
+
+.strategy_cls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+    margin-top: 25px;
+}
+
+.strategy_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 3px #f7f1f1;
+}
+
+#strategy_card_span {
+    color: #8d8c8c;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.empty_strategy {
+    margin-top: 80px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#empty_date {
+    margin-top: 20%;
+    display: block;
+    font-weight: bold;
+}
+
+#bullet{
+    font-size: 16px;
+}
