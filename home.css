@@ -138,3 +138,90 @@ body {
     display: block;
     font-weight: bold;
 }
+
+
+
+@media screen and (max-width: 480px) {
+   
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;       
+        padding: 10px;
+    }
+
+  
+    .menu_cls {
+        display: flex;
+        flex-wrap: nowrap; 
+        justify-content: space-between;
+        width: 100%;
+        max-width: 500px;      
+        padding: 8px;
+        border-radius: 12px;
+        background: #eee;
+    }
+
+    .menu_cls div {
+        flex: 1;
+        text-align: center;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 12px;        
+    }
+
+    .menu_select {
+        background: #0941af;
+        color: white;
+    }
+
+   
+    .date_dropdown {
+        width: 100%;
+        max-width: 500px;
+        margin-top: 20px;
+    }
+
+    .default_date {
+        font-size: 14px;
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .date_dropdown_list {
+        width: 90%;
+    }
+
+    .date_dropdown_list div {
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+    }
+
+
+    .strategy_cls {
+        width: 100%;
+        max-width: 500px;
+        margin-top: 20px;
+    }
+
+    .strategy_card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        padding: 15px;
+        border-radius: 12px;
+        font-size: 14px;
+    }
+
+    #strategy_card_span {
+        font-size: 12px;
+    }
+
+    .empty_strategy {
+        font-size: 14px;
+        text-align: center;
+    }
+}
